@@ -96,3 +96,161 @@ li {
   color: rgba(249, 138, 97, 0.5);
   text-align: center;
 }
+
+/* Mid section */
+.container {
+  margin: 10px 0;
+  justify-content: center;
+  display: flex;
+  height: fit-content;
+}
+
+@media only screen 
+  and (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+    }
+}
+
+/* Mid section Article section */
+
+.article {
+  height: 100%;
+  background: #D8D7D7;
+  padding: 10px;
+  flex-basis: 0;
+  flex-grow: 2.5;
+}
+
+.article__container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.article__container .article__block:first-child {
+  margin-right: 10px;
+}
+
+.article__block {
+  width: 100%;
+}
+
+.article__elem {
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #F4F1F1;
+}
+
+.article__elem-photo {
+  height: 200px;
+  position: relative;
+}
+
+.bg-1 {
+  background: url("assets/sakura.jpg") no-repeat 50% 70%;
+  background-size: cover;
+}
+
+.bg-2 {
+  background: url("assets/fuji.jpg") no-repeat 50% 70%;
+  background-size: cover;
+}
+
+.bg-3 {
+  background: url("assets/comida.jpg") no-repeat 50% 70%;
+  background-size: cover;
+}
+
+.bg-4 {
+  background: url("assets/noche.jpg") no-repeat 50% 70%;
+  background-size: cover;
+}
+
+.article__elem-date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #eedaac;
+  margin: 5px;
+}
+
+.article__elem-title {
+  background: #F08080;
+  width: 100%;
+  padding: 10px 0 0 5px;
+  color: white;
+}
+
+.article__elem-text {
+  columns: 150px auto;
+}
+
+.article__elem-link {
+  margin: 0;
+  cursor: pointer;
+}
+
+.article__footer-text {
+  text-align: center;
+  color: black;
+  margin: 0;
+}
+
+
+@media only screen 
+  and (max-width: 640px)
+ {
+  .article__container {
+    flex-direction: column;
+  }
+ }
+
+/* Mid section Column section */
+.column {
+  background: #D8D7D7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20px;
+  padding: 30px 10px;
+  text-align: center;
+  flex-basis: 0;
+  flex-grow: 0.7;
+}
+
+.column * {
+  color: black;
+}
+
+.column__title {
+  margin: 0;
+}
+@media only screen 
+  and (max-width: 1024px) {
+    .column {
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+}
+
+
+.column div:not(:last-child) {
+  margin-bottom: 10px !important;
+}
+
+
+/* Footer */
+
+.footer {
+  background: #D8D7D7;
+}
+
+.footer__elem {
+  background: #F4F1F1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0 10px;
+}
