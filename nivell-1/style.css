@@ -1,0 +1,152 @@
+/* General setting */
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header & Container general settings */
+
+.header, .container, .footer {
+  width: 100%;
+  background: black;
+  padding: 20px;
+  display: flex;
+  margin: 20px auto;
+}
+
+/* Header */
+.header {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Navbar */
+
+.nav {
+  width: 100%;
+  margin: 0 22px 10px;
+  background: #27394E;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;;
+  padding: 30px;
+}
+
+.nav__elem {
+  height: 20px;
+  width: 100%;
+  background: #EA584B;
+  flex: 0.5;
+}
+
+nav div:nth-child(2) {
+  flex-grow: 2;
+}
+
+nav div:nth-child(1) {
+  margin-right: 20px;
+}
+
+nav div:nth-child(3) {
+  margin-left: 20px;
+}
+
+/* Header block */
+.block {
+  width: 100%;
+  margin: 0 22px;
+  background: #F0763A;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;;
+  padding: 30px;
+}
+
+.block__elem {
+  height: 20px;
+  width: 100%;
+  background: #FFCC5E;
+}
+
+/* Mid section */
+.container {
+  justify-content: center;
+  display: flex;
+  height: fit-content;
+}
+
+/* Mid section Article section */
+
+.article {
+  height: 100%;
+  background: #44465E;
+  flex-grow: 3;
+  padding: 30px;
+}
+
+.article__container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.article__container .article__block:first-child {
+  margin-right: 10px;
+}
+
+.article__block {
+  width: 100%;
+}
+
+.article__elem {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.article__footer {
+  height: 20px;
+}
+
+.article__elem--light {
+  background: #6399BB;
+}
+
+.article__elem--dark {
+  background: #1664A4;
+}
+
+/* Mid section Column section */
+.column {
+  background: #F94C47;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20px;
+  padding: 30px;
+}
+
+.column__elem {
+  background: #FFE380;
+  height: 20px;
+}
+
+.column div:not(:last-child) {
+  margin-bottom: 10px !important;
+}
+
+
+/* Footer */
+
+.footer__elem {
+  width: 100%;
+  background: #E4A434;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;;
+  padding: 10px;
+}
