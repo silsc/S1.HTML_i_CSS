@@ -9,7 +9,7 @@
 }
 
 /* Header & Container general settings */
-
+ 
 .header, .container, .footer {
   width: 100%;
   background: black;
@@ -79,6 +79,15 @@ nav div:nth-child(3) {
   height: fit-content;
 }
 
+@media only screen 
+  and (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      background: yellow;
+    }
+}
+
+
 /* Mid section Article section */
 
 .article {
@@ -128,6 +137,14 @@ nav div:nth-child(3) {
   justify-content: flex-start;
   margin-left: 20px;
   padding: 30px;
+}
+
+@media only screen 
+  and (max-width: 1024px) {
+    .column {
+      margin-left: 0px;
+      margin-top: 20px;
+    }
 }
 
 .column__elem {
